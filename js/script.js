@@ -1,14 +1,14 @@
 let colmeia = document.getElementById("palco").getContext("2d");
 
-let abelha = new Abelha(200, 500, 100, 100, "yellow");
-let aranha = new Aranha(100, 100, 100, 100, "black");
+let abelha = new Abelha(200, 500, 100, 100, "Img/abelhaRonaldo.jpg");
+let aranha = new Aranha(100, 100, 100, 100, "Img/spider1.png");
 
 document.addEventListener("keydown", function(e){
     if(e.key == "a")
-        abelha.dir = -1;
+        abelha.dir = -3;
 
     if (e.key =="d")
-        abelha.dir = 1;
+        abelha.dir = 3;
     
 });
 
@@ -40,5 +40,4 @@ function main(){
     draw();
 }
 
-setInterval(main, 10); //chama a func em 10s
-
+setInterval(main, 10); //chama a func em 10
